@@ -9,9 +9,9 @@ Instalação
 Você pode instalar o Jest por meio do npm usando o seguinte comando:
 
 
-javaScript ´´´
+```javaScrip
 npm install --save-dev jest
-´´´
+```
 Configuração
 
 Para configurar o Jest, crie um arquivo chamado jest.config.js na raiz do seu projeto. Aqui, você pode especificar as opções de configuração para o Jest. Por exemplo, se você tiver arquivos de teste em uma pasta chamada __tests__, poderá adicionar o seguinte ao seu arquivo de configuração:
