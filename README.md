@@ -55,7 +55,7 @@ O Jest é uma ferramenta muito útil para escrever testes em JavaScript. É fác
 
 # testes unitários com Jest
 
-<h2>Crie um arquivo sum.js com a seguinte função:</h2>
+<h4>Crie um arquivo sum.js com a seguinte função:</h4>
 
 ```java
 function sum(a, b) {
@@ -64,7 +64,7 @@ function sum(a, b) {
 module.exports = sum;
 ```
 
-<h2>Agora, crie um arquivo de teste chamado sum.test.js com o seguinte conteúdo:</h2>
+<h4>Agora, crie um arquivo de teste chamado sum.test.js com o seguinte conteúdo:</h4>
 
 ```java
 const sum = require('./sum');
@@ -82,13 +82,13 @@ test('adds -1 + 1 to equal 0', () => {
 });
 ```
 
-<h2>Nesse exemplo, estamos importando a função sum do arquivo sum.js e definindo três testes diferentes. Em cada teste, estamos passando dois valores para a função sum e usando a função expect do Jest para verificar se a saída da função sum é igual ao resultado esperado.Para executar esses testes, basta executar o seguinte comando no terminal:</2>
+<h4>Nesse exemplo, estamos importando a função sum do arquivo sum.js e definindo três testes diferentes. Em cada teste, estamos passando dois valores para a função sum e usando a função expect do Jest para verificar se a saída da função sum é igual ao resultado esperado.Para executar esses testes, basta executar o seguinte comando no terminal:</h4>
 
 ```java
 npx jest
 ```
 
-<h2>O Jest executará todos os testes definidos nos arquivos .test.js ou .spec.js na pasta atual e exibirá o resultado na saída do terminal:</h2>
+<h4>O Jest executará todos os testes definidos nos arquivos .test.js ou .spec.js na pasta atual e exibirá o resultado na saída do terminal:</h4>
 
 ```java
  PASS  ./sum.test.js
