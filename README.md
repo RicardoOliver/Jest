@@ -9,7 +9,7 @@ Instalação
 Você pode instalar o Jest por meio do npm usando o seguinte comando:
 
 
-```javaScrip
+```java
 npm install --save-dev jest
 ```
 Configuração
