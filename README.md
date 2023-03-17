@@ -55,7 +55,7 @@ O Jest é uma ferramenta muito útil para escrever testes em JavaScript. É fác
 
 # testes unitários com Jest
 
-<h4>Crie um arquivo sum.js com a seguinte função:</h4>
+<h4>Crie um arquivo ```java sum.js ``` com a seguinte função:</h4>
 
 ```java
 function sum(a, b) {
