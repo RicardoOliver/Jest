@@ -49,3 +49,48 @@ Isso procurará arquivos de teste em sua pasta __tests__ e executará todos os t
 Conclusão
 
 O Jest é uma ferramenta muito útil para escrever testes em JavaScript. É fácil de configurar e escrever testes no Jest é bastante simples. Espero que este tutorial tenha ajudado você a começar com o Jest.
+
+# testes unitários com Jest
+<h2>Crie um arquivo sum.js com a seguinte função:</h2>
+```java
+function sum(a, b) {
+  return a + b;
+}
+
+module.exports = sum;
+```
+<h2>Agora, crie um arquivo de teste chamado sum.test.js com o seguinte conteúdo:</h2>
+```java
+const sum = require('./sum');
+
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});
+
+test('adds 2 + 2 to equal 4', () => {
+  expect(sum(2, 2)).toBe(4);
+});
+
+test('adds -1 + 1 to equal 0', () => {
+  expect(sum(-1, 1)).toBe(0);
+});
+```
+<h2>Nesse exemplo, estamos importando a função sum do arquivo sum.js e definindo três testes diferentes. Em cada teste, estamos passando dois valores para a função sum e usando a função expect do Jest para verificar se a saída da função sum é igual ao resultado esperado.
+
+Para executar esses testes, basta executar o seguinte comando no terminal:</2>
+```java
+npx jest
+```
+<h2>O Jest executará todos os testes definidos nos arquivos .test.js ou .spec.js na pasta atual e exibirá o resultado na saída do terminal:</h2>
+```java
+ PASS  ./sum.test.js
+  ✓ adds 1 + 2 to equal 3 (2ms)
+  ✓ adds 2 + 2 to equal 4
+  ✓ adds -1 + 1 to equal 0
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        1.244s
+Ran all test suites.
+```
