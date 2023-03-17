@@ -28,11 +28,13 @@ Escrevendo testes
 Para escrever testes no Jest, crie um arquivo de teste que termine com .test.js ou .spec.js em sua pasta de teste. Por exemplo, crie um arquivo chamado sum.test.js na pasta __tests__ com o seguinte conteúdo:
 
 javascript
+
 ```java
 function sum(a, b) {
   return a + b;
 }
 ```
+
 ```java
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
@@ -42,6 +44,7 @@ Neste exemplo, estamos definindo uma função chamada sum que recebe dois argume
 Executando testes
 
 Para executar os testes, basta executar o seguinte comando em seu terminal:
+
 ```java
 npx jest
 ```
@@ -51,15 +54,18 @@ Conclusão
 O Jest é uma ferramenta muito útil para escrever testes em JavaScript. É fácil de configurar e escrever testes no Jest é bastante simples. Espero que este tutorial tenha ajudado você a começar com o Jest.
 
 # testes unitários com Jest
+
 <h2>Crie um arquivo sum.js com a seguinte função:</h2>
+
 ```java
 function sum(a, b) {
   return a + b;
 }
-
 module.exports = sum;
 ```
+
 <h2>Agora, crie um arquivo de teste chamado sum.test.js com o seguinte conteúdo:</h2>
+
 ```java
 const sum = require('./sum');
 
@@ -75,13 +81,15 @@ test('adds -1 + 1 to equal 0', () => {
   expect(sum(-1, 1)).toBe(0);
 });
 ```
-<h2>Nesse exemplo, estamos importando a função sum do arquivo sum.js e definindo três testes diferentes. Em cada teste, estamos passando dois valores para a função sum e usando a função expect do Jest para verificar se a saída da função sum é igual ao resultado esperado.
 
-Para executar esses testes, basta executar o seguinte comando no terminal:</2>
+<h2>Nesse exemplo, estamos importando a função sum do arquivo sum.js e definindo três testes diferentes. Em cada teste, estamos passando dois valores para a função sum e usando a função expect do Jest para verificar se a saída da função sum é igual ao resultado esperado.Para executar esses testes, basta executar o seguinte comando no terminal:</2>
+
 ```java
 npx jest
 ```
+
 <h2>O Jest executará todos os testes definidos nos arquivos .test.js ou .spec.js na pasta atual e exibirá o resultado na saída do terminal:</h2>
+
 ```java
  PASS  ./sum.test.js
   ✓ adds 1 + 2 to equal 3 (2ms)
